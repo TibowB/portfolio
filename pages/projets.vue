@@ -10,5 +10,10 @@ import Vue from 'vue';
 export default Vue.extend({
   name: 'Projets',
   layout: 'default',
+  head() {
+    return {
+      title: 'Projets',
+    };
+  },
 });
 </script>
