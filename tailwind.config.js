@@ -7,5 +7,13 @@ module.exports = {
       button: '#f582ae',
       buttonText: '#001858',
     },
+    fontFamily: {
+      sans: ['Helvetica Neue', 'sans-serif'],
+    },
+    variants: {
+      extend: {
+        scale: ['hover'],
+      },
+    },
   },
 };

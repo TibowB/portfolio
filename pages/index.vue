@@ -1,11 +1,19 @@
 <template>
-    <NavBar />
+  <div class="flex justify-center content-center">
+    <h3>🚧 Site en construction 🚧</h3>
+  </div>
 </template>
 
 <script lang="ts">
-import Vue from 'vue'
+import Vue from 'vue';
 
 export default Vue.extend({
-  layout: 'default'
-})
+  name: 'Index',
+  layout: 'default',
+  head() {
+    return {
+      title: 'Home',
+    }
+  }
+});
 </script>
