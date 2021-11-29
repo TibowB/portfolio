@@ -26,7 +26,7 @@ export default Vue.extend({
   },
   methods: {
     getClass(position: string): string {
-      return `fixed bottom-0 ${position}-0 h-screen flex items-center m-5`;
+      return `fixed inset-y-0 ${position}-0 h-screen flex items-center m-5`;
     },
   },
   name: 'SideBar',
