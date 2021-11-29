@@ -10,5 +10,10 @@ import Vue from 'vue';
 export default Vue.extend({
   name: 'Contact',
   layout: 'default',
+  head() {
+    return {
+      title: 'Contact',
+    };
+  },
 });
 </script>
