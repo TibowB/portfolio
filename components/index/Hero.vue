@@ -2,8 +2,8 @@
   <div class="flex flex-col justify-center content-center text-center">
     <HeroText />
     <div class="flex flex-row">
-      <Button>Voir mes projets</Button>
-      <Button>Me contacter</Button>
+      <Button page="projets">Voir mes projets</Button>
+      <Button page="contact">Me contacter</Button>
     </div>
   </div>
 </template>
