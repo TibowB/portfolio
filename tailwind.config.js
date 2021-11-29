@@ -4,7 +4,10 @@ module.exports = {
       primary: '#fef6e4',
       headline: '#001858',
       paragraph: '#172c66',
-      button: '#f582ae',
+      button: {
+        default: '#f582ae',
+        dark: '#99536e',
+      },
       buttonText: '#001858',
     },
     fontFamily: {
