@@ -1,6 +1,6 @@
 <template>
   <div :class="getClass(position)">
-    <NuxtLink :to="{ path: name }" class="hover:bg-red">
+    <NuxtLink :to="`/${name}`" class="hover:bg-red">
       <div class="text-headline uppercase flex flex-col text-2xl">
         <span v-for="(letter, index) of name" :key="index">
           {{ letter }}
@@ -17,23 +17,21 @@ export default Vue.extend({
   props: {
     name: {
       type: String,
-      default: 'Sidebar'
+      default: 'Sidebar',
     },
     position: {
       type: String,
-      default: 'left'
+      default: 'left',
     },
   },
   methods: {
     getClass(position: string): string {
       return `fixed bottom-0 ${position}-0 h-screen flex items-center m-5`;
-    }
+    },
   },
   name: 'SideBar',
-  layout: 'default'
+  layout: 'default',
 });
 </script>
 
-<style scoped>
-
-</style>
+<style scoped></style>
