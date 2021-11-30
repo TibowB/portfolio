@@ -1,7 +1,7 @@
 <template>
   <button
     class="btn bg-button-default hover:bg-button-dark text-buttonText hover:text-primary max-w-md mx-auto m-5"
-    @click="goToPage(page)"
+    @click="$router.push({ name: page })"
   >
     <slot></slot>
   </button>
@@ -15,11 +15,6 @@ export default Vue.extend({
     page: {
       type: String,
       required: true,
-    },
-  },
-  methods: {
-    goToPage(page: string): void {
-      this.$router.push({ name: page });
     },
   },
 });
