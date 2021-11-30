@@ -1,10 +1,5 @@
-import { mount, RouterLinkStub, createLocalVue } from '@vue/test-utils';
+import { mount, RouterLinkStub } from '@vue/test-utils';
 import NavBar from '@/components/commons/NavBar.vue';
-import VueRouter from 'vue-router';
-
-const localVue = createLocalVue();
-localVue.use(VueRouter);
-const router = new VueRouter();
 
 describe('NavBar', () => {
   test('Header content', () => {
