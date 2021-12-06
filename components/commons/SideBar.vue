@@ -1,6 +1,9 @@
 <template>
   <div :class="getClass(position)">
-    <NuxtLink :to="`/${name}`" class="hover:bg-red">
+    <NuxtLink
+      :to="`/${name}`"
+      class="transform transition duration-300 hover:scale-110"
+    >
       <div class="text-headline uppercase flex flex-col text-2xl">
         <span v-for="(letter, index) of name" :key="index">
           {{ letter }}
