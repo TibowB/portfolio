@@ -13,10 +13,5 @@ module.exports = {
     fontFamily: {
       sans: ['Helvetica Neue', 'sans-serif'],
     },
-    variants: {
-      extend: {
-        scale: ['hover'],
-      },
-    },
   },
 };
