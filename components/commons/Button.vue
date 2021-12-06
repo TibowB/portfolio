@@ -1,6 +1,6 @@
 <template>
   <button
-    class="btn bg-button-default hover:bg-button-dark text-buttonText hover:text-primary max-w-md mx-auto m-5"
+    class="btn bg-button-default hover:bg-button-dark text-buttonText hover:text-primary max-w-md mx-auto m-5 transform transition duration-300 hover:scale-110"
     @click="$router.push({ name: page })"
   >
     <slot></slot>
