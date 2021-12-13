@@ -1,9 +1,11 @@
 <template>
   <div>
     <NavBar />
-    <SideBar name="projets" position="left" />
-    <Nuxt class="h-screen" />
-    <SideBar name="contact" position="right" />
+    <div class="flex">
+      <SideBar name="projets" position="left" />
+      <Nuxt class="h-screen m-auto" />
+      <SideBar name="contact" position="right" />
+    </div>
   </div>
 </template>
 
