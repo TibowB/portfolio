@@ -2,7 +2,7 @@
   <div>
     <NavBar />
     <SideBar name="projets" position="left" />
-    <Nuxt class="h-screen flex justify-center content-center" />
+    <Nuxt class="h-screen" />
     <SideBar name="contact" position="right" />
   </div>
 </template>
