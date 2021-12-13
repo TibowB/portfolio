@@ -1,5 +1,5 @@
 <template>
-  <div class="flex justify-center content-center">
+  <div class="flex justify-center items-center">
     <Hero />
   </div>
 </template>

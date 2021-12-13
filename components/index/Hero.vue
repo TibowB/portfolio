@@ -1,5 +1,5 @@
 <template>
-  <div class="flex flex-col justify-center content-center text-center">
+  <div class="flex flex-col text-center">
     <HeroText />
     <div class="flex flex-row mt-5">
       <Button page="projets">Voir mes projets</Button>

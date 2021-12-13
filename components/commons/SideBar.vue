@@ -1,15 +1,17 @@
 <template>
-  <div :class="getClass(position)">
-    <NuxtLink
-      :to="`/${name}`"
-      class="transform transition duration-300 hover:scale-110"
-    >
-      <div class="text-headline uppercase flex flex-col text-2xl">
-        <span v-for="(letter, index) of name" :key="index">
-          {{ letter }}
-        </span>
-      </div>
-    </NuxtLink>
+  <div class="fixed inset-y-0 m-5" :class="`${position}-0`">
+    <div class="flex flex-col justify-center items-center h-screen">
+      <NuxtLink
+        :to="`/${name}`"
+        class="transform transition duration-300 hover:scale-110"
+      >
+        <div class="text-headline uppercase flex flex-col text-2xl">
+          <span v-for="(letter, index) of name" :key="index">
+            {{ letter }}
+          </span>
+        </div>
+      </NuxtLink>
+    </div>
   </div>
 </template>
 
