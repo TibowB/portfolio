@@ -12,12 +12,12 @@ describe('SideBar', () => {
       },
     });
     // Test left position
-    expect(wrapper.get('.left-0').isVisible()).toBe(true);
+    expect(wrapper.get('.ml-5').isVisible()).toBe(true);
     // Update position to right
     wrapper.setProps({ position: 'right' });
     await wrapper.vm.$nextTick();
     // Test right position
-    expect(wrapper.get('.right-0').isVisible()).toBe(true);
+    expect(wrapper.get('.mr-5').isVisible()).toBe(true);
   });
 
   test('Nuxtlink', async () => {
