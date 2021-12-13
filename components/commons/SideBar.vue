@@ -1,5 +1,5 @@
 <template>
-  <div class="fixed inset-y-0 m-5" :class="`${position}-0`">
+  <div class="h-screen sticky top-0" :class="getMarginByPosition(position)">
     <div class="flex flex-col justify-center items-center h-screen">
       <NuxtLink
         :to="`/${name}`"
@@ -30,8 +30,8 @@ export default Vue.extend({
     },
   },
   methods: {
-    getClass(position: string): string {
-      return `fixed inset-y-0 ${position}-0 h-screen flex items-center m-5`;
+    getMarginByPosition(position: string): string {
+      return position === 'left' ? 'ml-5' : 'mr-5';
     },
   },
   name: 'SideBar',
