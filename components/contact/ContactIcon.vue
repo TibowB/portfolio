@@ -3,7 +3,7 @@
     <img
       class="w-6 h-6 object-cover cursor-pointer transform transition duration-300 hover:scale-110"
       :src="`/img/${icon}.png`"
-      alt="Thibault Bruggeman contact picture"
+      :alt="`Icon for ${icon}`"
     />
   </a>
 </template>
