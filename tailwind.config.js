@@ -9,6 +9,7 @@ module.exports = {
         dark: '#99536e',
       },
       buttonText: '#001858',
+      card: '#f3d2c1',
     },
     fontFamily: {
       sans: ['Helvetica Neue', 'sans-serif'],
