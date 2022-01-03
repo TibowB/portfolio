@@ -2,7 +2,7 @@
   <div class="flex flex-col text-center">
     <HeroText />
     <div class="flex flex-row mt-5">
-      <Button page="projets">Voir mes projets</Button>
+      <Button page="projects">Voir mes projets</Button>
       <Button page="contact">Me contacter</Button>
     </div>
   </div>
