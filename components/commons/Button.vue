@@ -1,9 +1,12 @@
 <template>
   <button
     class="btn bg-button-default hover:bg-button-dark text-buttonText hover:text-primary max-w-md mx-auto m-5 transform transition duration-300 hover:scale-110"
-    @click="$router.push({ name: page })"
+    @click="linkToPage()"
   >
-    <slot></slot>
+    <a v-if="isProject" :href="page" target="_blank">
+      <slot></slot>
+    </a>
+    <slot v-else></slot>
   </button>
 </template>
 <script lang="ts">
@@ -15,6 +18,18 @@ export default Vue.extend({
     page: {
       type: String,
       required: true,
+    },
+    isProject: {
+      type: Boolean,
+      required: false,
+      default: false,
+    },
+  },
+  methods: {
+    linkToPage() {
+      return this.$props.isProject
+        ? null
+        : this.$router.push({ name: this.$props.page });
     },
   },
 });
