@@ -13,7 +13,7 @@ describe('ContactCard', () => {
     const image = wrapper.find('img');
 
     expect(link.attributes().href).toEqual('http://www.test.com');
-    expect(image.attributes().src).toEqual('/img/test.png');
+    expect(image.attributes().src).toEqual('/img/contact/test.png');
     expect(image.attributes().alt).toEqual('Icon for test');
   });
 });

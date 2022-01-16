@@ -5,7 +5,7 @@
     >
       <img
         class="w-40 h-40 object-cover rounded-full mx-auto shadow-lg"
-        src="/img/contact.jpeg"
+        src="/img/contact/contact.jpeg"
         alt="Thibault Bruggeman contact picture"
       />
       <p class="capitalize text-2xl text-buttonText m-3">Thibault Bruggeman</p>
