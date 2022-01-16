@@ -1,9 +1,9 @@
 <template>
-  <div class="flex justify-center content-center text-center mx-5">
+  <div class="flex justify-center content-center text-center mx-auto">
     <ProjectCard v-for="project in projects" :key="project.id">
       <h4 class="font-semibold mb-2">{{ project.name }}</h4>
       <img
-        class="max-w-80 min-w-60 max-h-70 min-h-60 rounded-md mx-auto shadow-lg"
+        class="max-w-70 max-h-60 rounded-md mx-auto shadow-lg"
         :src="project.imagePath"
         :alt="project.imageAlt"
       />
