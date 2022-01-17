@@ -1,20 +1,35 @@
+const paths = {
+  image: '/img/projects/',
+  portfolio: 'bruggeman.dev',
+  github: 'https://github.com/TibowB/'
+}
+
+
 export const state = () => ({
   projects: [
     {
       id: 1,
       name: 'Random Color Generator',
-      imagePath: '/img/projects/random.png',
+      imagePath: `${paths.image}random.png`,
       imageAlt: 'Image of the project Random Color Generator',
-      live: 'https://random-color-generator.bruggeman.dev',
-      code: 'https://github.com/TibowB/random-color-generator',
+      live: `https://random-color-generator.${paths.portfolio}`,
+      code: `${paths.github}random-color-generator`,
     },
     {
       id: 2,
       name: 'CityHall',
-      imagePath: '/img/projects/cityhall.png',
+      imagePath: `${paths.image}cityhall.png`,
       imageAlt: 'Image of the project CityHall',
-      live: 'https://cityhall.bruggeman.dev',
-      code: 'https://github.com/TibowB/cityhall',
+      live: `https://cityhall.${paths.portfolio}`,
+      code: `${paths.github}cityhall`,
+    },
+    {
+      id: 3,
+      name: 'Get A Burger',
+      imagePath: `${paths.image}getaburger.png`,
+      imageAlt: 'Image of the project Get A Burger',
+      live: `https://get-a-burger.${paths.portfolio}`,
+      code: `${paths.github}get-a-burger`,
     },
   ],
 });
