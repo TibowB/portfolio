@@ -31,5 +31,13 @@ export const state = () => ({
       live: `https://get-a-burger.${paths.portfolio}`,
       code: `${paths.github}get-a-burger`,
     },
+    {
+      id: 4,
+      name: 'Kitchenband',
+      imagePath: `${paths.image}kitchenband.png`,
+      imageAlt: 'Image of the project Kitchenband',
+      live: `https://kitchenband.${paths.portfolio}`,
+      code: `${paths.github}kitchenband`,
+    },
   ],
 });
